@@ -1,5 +1,6 @@
 import React from "react";
 import "./CharItem.scss";
+import { Link } from "react-router-dom";
 
 export default function CharItem({ data }) {
   const {
@@ -10,17 +11,17 @@ export default function CharItem({ data }) {
     stories,
   } = data;
   return (
-    <div className="char-item-container mr-3">
-      <div className="image-container">
+    <div className="char-item-container mr-5">
+      <div className="image-container mr-3">
         <img
           className="thumbnail-resize"
           src={`${path}.${extension}`}
           alt={`${name}`}
         />
       </div>
-      <h2>{id}</h2>
-      <p>{name}</p>
-      <p>{`Comics Available Number: ${available}`}</p>
+
+      <Link to={`/characters/${id}`}><h1 className='text-center'>{name}</h1></Link>
+      <p className='text-center'>{`Comics Available Number: ${available}`}</p>
     </div>
   );
 }

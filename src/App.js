@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import CharListPage from "./pages/CharListPage";
 import { Switch, Route } from "react-router-dom";
 import LayoutWrapper from "./components/LayoutWrapper";
@@ -20,12 +19,6 @@ function App() {
           </LayoutWrapper>
         </Route>
 
-        <Route path="/characters">
-          <LayoutWrapper>
-            <CharListPage />
-          </LayoutWrapper>
-        </Route>
-
         <Route
           path="/characters/:id"
           render={(props) => (
@@ -34,6 +27,14 @@ function App() {
             </LayoutWrapper>
           )}
         ></Route>
+
+        <Route path="/characters">
+          <LayoutWrapper>
+            <CharListPage />
+          </LayoutWrapper>
+        </Route>
+
+        
       </Switch>
     </div>
   );
