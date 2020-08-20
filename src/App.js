@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import LayoutWrapper from "./components/LayoutWrapper";
 import Homepage from "./pages/Homepage";
 
+import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 import CharDetailPage from "./components/CharDetailPage";
@@ -20,7 +21,7 @@ function App() {
         </Route>
 
         <Route
-          path="/characters/:id"
+          path="/characters/:id" exact
           render={(props) => (
             <LayoutWrapper>
               <CharDetailPage {...props} />
@@ -33,8 +34,6 @@ function App() {
             <CharListPage />
           </LayoutWrapper>
         </Route>
-
-        
       </Switch>
     </div>
   );

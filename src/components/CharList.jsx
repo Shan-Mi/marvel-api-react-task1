@@ -7,8 +7,8 @@ import "./CartList.scss";
 const CharList = ({ data, isLoading }) => {
   return (
     <div className="char-list-container">
-      {data.map((item) => (
-        <CharItem key={item.id} isLoading={isLoading} data={item} />
+      {data.map((item, index) => (
+        <CharItem key={item.id} isLoading={isLoading} data={item} index={index}/>
       ))}
     </div>
   );
