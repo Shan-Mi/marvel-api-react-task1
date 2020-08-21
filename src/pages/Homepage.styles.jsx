@@ -16,7 +16,6 @@ const HomepageWrapper = styled.div`
     font-size: 3rem;
 
     &:hover {
-      cursor: pointer;
       transform: scale(1.1);
       transition: transform 0.2s ease-in-out;
     }

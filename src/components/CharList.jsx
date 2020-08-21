@@ -1,16 +1,20 @@
 import React from "react";
 import CharItem from "./CharItem";
+import { CharListContainer } from "./CharListContainer";
 import WithSpinner from "./WithSpinner";
-
-import "./CartList.scss";
 
 const CharList = ({ data, isLoading }) => {
   return (
-    <div className="char-list-container">
+    <CharListContainer>
       {data.map((item, index) => (
-        <CharItem key={item.id} isLoading={isLoading} data={item} index={index}/>
+        <CharItem
+          key={item.id}
+          isLoading={isLoading}
+          data={item}
+          index={index}
+        />
       ))}
-    </div>
+    </CharListContainer>
   );
 };
 

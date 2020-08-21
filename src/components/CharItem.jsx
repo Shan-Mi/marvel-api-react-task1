@@ -1,6 +1,6 @@
 import React from "react";
-import "./CharItem.scss";
 import { Link } from "react-router-dom";
+import { ImageContainer, CharItemContainer } from "./CharItem.styles";
 import WithSpinner from "./WithSpinner";
 
 function CharItem({ data, index, isLoading }) {
@@ -13,22 +13,18 @@ function CharItem({ data, index, isLoading }) {
   } = data;
 
   return (
-    <div className="char-item-container mr-5">
+    <CharItemContainer>
       <Link to={`/characters/${index}`}>
-        <div className="image-container mr-3">
-          <img
-            className="thumbnail-resize"
-            src={`${path}.${extension}`}
-            alt={`${name}`}
-          />
-        </div>
+        <ImageContainer>
+          <img src={`${path}.${extension}`} alt={`${name}`} />
+        </ImageContainer>
       </Link>
 
       <Link to={`/characters/${index}`}>
-        <h1 className="text-center">{name}</h1>
+        <h1>{name}</h1>
       </Link>
-      <p className="text-center">{`Comics Available Number: ${available}`}</p>
-    </div>
+      <p>{`Comics Available Number: ${available}`}</p>
+    </CharItemContainer>
   );
 }
 
@@ -36,5 +32,4 @@ export default WithSpinner(CharItem);
 /* 
 correct path:
 path + extension
-
 */

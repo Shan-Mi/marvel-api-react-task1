@@ -1,7 +1,6 @@
 import React from "react";
 import CharItem from "./CharItem";
 import useFetch from "./useFetch";
-import WithSpinner from "./WithSpinner";
 
 const CharDetailPage = (props) => {
   const id = props.match.params.id;
@@ -14,4 +13,4 @@ const CharDetailPage = (props) => {
   return <CharItem data={data} isLoading={isLoading} index={id} />;
 };
 
-export default WithSpinner(CharDetailPage);
+export default CharDetailPage;
