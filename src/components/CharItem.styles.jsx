@@ -14,7 +14,6 @@ export const ImageContainer = styled.div`
   }
 `;
 export const CharItemContainer = styled.div`
-  /* width: 1rem; */
   width: 300px;
   margin: 1rem;
   display: flex;
@@ -27,4 +26,10 @@ export const CharItemContainer = styled.div`
   h1 {
     text-align: center;
   }
+
+  &:hover {
+    transform: scale(1.02);
+    transition: transform 250ms ease-in;
+  }
+  transition: transform 200ms ease-out;
 `;

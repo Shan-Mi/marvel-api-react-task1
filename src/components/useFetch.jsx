@@ -13,7 +13,10 @@ export default function useFetch(url, id, dependencies) {
         return res.json();
       })
       .then((result) => {
-        setData(result.data.results[id]);
+        id === "preview"
+          ? setData(result.data.results)
+          : setData(result.data.results[id]);
+
         setIsLoading(false);
       });
   }

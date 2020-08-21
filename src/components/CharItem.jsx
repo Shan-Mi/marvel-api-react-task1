@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ImageContainer, CharItemContainer } from "./CharItem.styles";
 import WithSpinner from "./WithSpinner";
 
-function CharItem({ data, index, isLoading }) {
+const CharItem = ({ data, index, isLoading }) => {
   const {
     // id,
     name,
@@ -26,7 +26,7 @@ function CharItem({ data, index, isLoading }) {
       <p>{`Comics Available Number: ${available}`}</p>
     </CharItemContainer>
   );
-}
+};
 
 export default WithSpinner(CharItem);
 /* 
