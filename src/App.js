@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/marvel-api-react-task1" exact>
           <LayoutWrapper>
             <Homepage />
           </LayoutWrapper>
