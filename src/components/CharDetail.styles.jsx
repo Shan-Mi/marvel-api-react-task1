@@ -13,16 +13,26 @@ export const NameListContainer = styled.div`
 export const HeaderContainer = styled.div`
   margin: 2rem 0;
   display: flex;
-
   justify-content: space-between;
 
   div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
-    h1,
-    h3 {
+    h1 {
+      font-size: 3.5rem;
       margin-right: auto;
+    }
+
+    h3 {
+      text-indent: 2rem;
+      margin-right: auto;
+
+      /* text-align: center; */
+      span {
+        font-weight: bold;
+      }
     }
   }
   img {

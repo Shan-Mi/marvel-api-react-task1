@@ -22,7 +22,7 @@ const CharDetail = ({ data, isLoading, link }) => {
       <HeaderContainer>
         <div>
           <h1>{name}</h1>
-          <h3>{id}</h3>
+          <h3><span>ID: </span>{id}</h3>
         </div>
         <img src={`${path}.${extension}`} alt={`${name}`} />
       </HeaderContainer>
