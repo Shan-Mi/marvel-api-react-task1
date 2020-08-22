@@ -1,7 +1,7 @@
 import React from "react";
 
 import WithSpinner from "./WithSpinner";
-import { NameListContainer } from "./CharDetail.styles";
+import { HeaderContainer, NameListContainer } from "./CharDetail.styles";
 import DetailInfoContainer from "./DetailInfoContainer";
 
 const CharDetail = ({ data, isLoading }) => {
@@ -17,11 +17,13 @@ const CharDetail = ({ data, isLoading }) => {
 
   return (
     <div className="detail-page-container">
-      <div className="detail-page-header">
-        <h1>{name}</h1>
-        <h3>{id}</h3>
+      <HeaderContainer>
+        <div>
+          <h1>{name}</h1>
+          <h3>{id}</h3>
+        </div>
         <img src={`${path}.${extension}`} alt={`${name}`} />
-      </div>
+      </HeaderContainer>
       <div className="detail-page-info-body">
         <div className="detail-page-comics">
           <h3>{`Available comics amount: ${comicsNumber}`}</h3>
