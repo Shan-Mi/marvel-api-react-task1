@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d0e740e05b8af2f777ad44bad8a03d45",
+    "revision": "5e581eba8df668ee1ae3634e39452a4e",
     "url": "/marvel-api-react-task1/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-api-react-task1/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "67d73823a5f82d22a4bd",
+    "revision": "8476a5435529d833a06a",
     "url": "/marvel-api-react-task1/static/css/main.53ac6f28.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marvel-api-react-task1/static/js/2.237f4118.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "67d73823a5f82d22a4bd",
-    "url": "/marvel-api-react-task1/static/js/main.5bb0561c.chunk.js"
+    "revision": "8476a5435529d833a06a",
+    "url": "/marvel-api-react-task1/static/js/main.933f9224.chunk.js"
   },
   {
     "revision": "4cb7df361a112e492c2f",
