@@ -3,8 +3,9 @@ import React from "react";
 import WithSpinner from "./WithSpinner";
 import { HeaderContainer, NameListContainer } from "./CharDetail.styles";
 import DetailInfoContainer from "./DetailInfoContainer";
+import PageSwitcher from "./PageSwitcher";
 
-const CharDetail = ({ data, isLoading }) => {
+const CharDetail = ({ data, isLoading, link , history}) => {
   const {
     id,
     name,
@@ -17,6 +18,7 @@ const CharDetail = ({ data, isLoading }) => {
 
   return (
     <div className="detail-page-container">
+     <PageSwitcher link={link} history={history} /> 
       <HeaderContainer>
         <div>
           <h1>{name}</h1>
