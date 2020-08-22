@@ -14,6 +14,7 @@ const HomepageWrapper = styled.div`
   h1 {
     place-self: center;
     font-size: 3rem;
+    color: peru;
 
     &:hover {
       transform: scale(1.1);
