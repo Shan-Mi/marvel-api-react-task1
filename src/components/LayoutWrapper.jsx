@@ -11,7 +11,6 @@ export default function LayoutSimple({ children }) {
         <Link className=" btn btn-outline-info btn-lg " to="/characters">
           Go to Chars List
         </Link>
-
       </div>
       {children}
     </>

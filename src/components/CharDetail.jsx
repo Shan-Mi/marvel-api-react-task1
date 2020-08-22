@@ -28,9 +28,13 @@ const CharDetail = ({ data, isLoading }) => {
         <div className="detail-page-comics">
           <h3>{`Available comics amount: ${comicsNumber}`}</h3>
           <NameListContainer>
-            {comicsItems.map((item, i) => (
-              <DetailInfoContainer key={i} item={item} />
-            ))}
+            {comicsNumber === 0 ? (
+              <DetailInfoContainer />
+            ) : (
+              comicsItems.map((item, i) => (
+                <DetailInfoContainer key={i} item={item} />
+              ))
+            )}
           </NameListContainer>
         </div>
 
@@ -47,12 +51,29 @@ const CharDetail = ({ data, isLoading }) => {
           </NameListContainer>
         </div>
 
+        <div className="detail-page-events">
+          <h3>{`Available series amount: ${seriesNumber}`}</h3>
+          <NameListContainer>
+            {seriesNumber === 0 ? (
+              <DetailInfoContainer />
+            ) : (
+              seriesItems.map((item, i) => (
+                <DetailInfoContainer key={i} item={item} />
+              ))
+            )}
+          </NameListContainer>
+        </div>
+
         <div className="detail-page-stories">
           <h3>{`Available stories amount: ${storiesNumber}`}</h3>
           <NameListContainer>
-            {storiesItems.map((item, i) => (
-              <DetailInfoContainer key={i} item={item} />
-            ))}
+            {storiesNumber === 0 ? (
+              <DetailInfoContainer />
+            ) : (
+              storiesItems.map((item, i) => (
+                <DetailInfoContainer key={i} item={item} />
+              ))
+            )}
           </NameListContainer>
         </div>
       </div>

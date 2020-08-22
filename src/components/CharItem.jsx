@@ -8,8 +8,7 @@ const CharItem = ({ data, index, isLoading }) => {
     // id,
     name,
     thumbnail: { extension, path },
-    comics: { available, items },
-    stories,
+    comics: { available },
   } = data;
 
   return (

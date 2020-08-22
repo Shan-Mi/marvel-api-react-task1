@@ -1,5 +1,4 @@
 import React from "react";
-import CharItem from "./CharItem";
 import useFetch from "./useFetch";
 
 import CharDetail from "./CharDetail";
@@ -13,10 +12,6 @@ const CharDetailPage = (props) => {
   );
 
   return <CharDetail data={data} isLoading={isLoading} />;
-
-  {
-    /* <CharItem data={data} isLoading={isLoading} index={id} />; */
-  }
 };
 
 export default CharDetailPage;
