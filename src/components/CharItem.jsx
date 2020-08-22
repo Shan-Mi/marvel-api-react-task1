@@ -13,13 +13,13 @@ const CharItem = ({ data, index, isLoading }) => {
 
   return (
     <CharItemContainer>
-      <Link to={`/characters/${index}`}>
+      <Link to={`/marvel-api-react-task1/characters/${index}`}>
         <ImageContainer>
           <img src={`${path}.${extension}`} alt={`${name}`} />
         </ImageContainer>
       </Link>
 
-      <Link to={`/characters/${index}`}>
+      <Link to={`/marvel-api-react-task1/characters/${index}`}>
         <h1>{name}</h1>
       </Link>
       <p>{`Comics Available Number: ${available}`}</p>

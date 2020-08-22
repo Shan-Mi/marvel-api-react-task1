@@ -14,14 +14,14 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Switch>
-        <Route path="/marvel-api-react-task1" exact>
+        <Route path="/marvel-api-react-task1/" exact>
           <LayoutWrapper>
             <Homepage />
           </LayoutWrapper>
         </Route>
 
         <Route
-          path="/characters/:id" exact
+          path="/marvel-api-react-task1/characters/:id" exact
           render={(props) => (
             <LayoutWrapper>
               <CharDetailPage {...props} />
@@ -29,7 +29,7 @@ function App() {
           )}
         ></Route>
 
-        <Route path="/characters">
+        <Route path="/marvel-api-react-task1/characters">
           <LayoutWrapper>
             <CharListPage />
           </LayoutWrapper>
