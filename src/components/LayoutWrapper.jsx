@@ -9,7 +9,7 @@ export default function LayoutSimple({ children }) {
           Home
         </Link>
         <Link className=" btn btn-outline-info btn-lg " to="/characters">
-          Go to Chars List
+          Go to Characters List
         </Link>
       </div>
       {children}

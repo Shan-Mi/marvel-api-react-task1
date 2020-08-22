@@ -1,23 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-const PageSwitcher = ({ link, history }) => {
+import MyButton from "./MyButton";
+import { ButtonsWrapper } from "./ButtonsWrapper.styles";
+
+const PageSwitcher = ({ link }) => {
   const pageIndex = [.../\d+$/.exec(link)];
   const pageURL = link.replace(pageIndex, "");
   const pagePrev = pageIndex == 0 ? 19 : pageIndex - 1;
   const pageNext = pageIndex == 19 ? 0 : Number(pageIndex) + 1;
 
-  return (
-    <div>
-      {/*       <p>{link}</p>
-      <p>{pageIndex}</p>
-      <p>{pageURL}</p>
-      <p>{pageURL}{pagePrev}</p>
-      <p>{pageURL}{pageNext}</p> */}
+  let history = useHistory();
 
-      <Link to={`${pageURL}${pagePrev}`} onClick={()=> history.push(`${pageURL}${pagePrev}`)}>Go to previous page</Link>
-      <Link to={`${pageURL}${pageNext}`}>Go to next page</Link>
-    </div>
+  function handleClickPrev() {
+    history.push(`${pageURL}${pagePrev}`);
+  }
+  function handleClickNext() {
+    history.push(`${pageURL}${pageNext}`);
+  }
+
+  return (
+    <ButtonsWrapper>
+      <MyButton onClick={handleClickPrev}>Go to previous page</MyButton>
+      <MyButton onClick={handleClickNext}>Go to next page</MyButton>
+    </ButtonsWrapper>
   );
 };
 
