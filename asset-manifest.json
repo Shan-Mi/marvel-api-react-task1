@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Shan-Mi/marvel-api-react-task1/static/css/main.ae0ab4c9.chunk.css",
+    "main.js": "/Shan-Mi/marvel-api-react-task1/static/js/main.94890e6d.chunk.js",
+    "main.js.map": "/Shan-Mi/marvel-api-react-task1/static/js/main.94890e6d.chunk.js.map",
+    "runtime-main.js": "/Shan-Mi/marvel-api-react-task1/static/js/runtime-main.adf02a9d.js",
+    "runtime-main.js.map": "/Shan-Mi/marvel-api-react-task1/static/js/runtime-main.adf02a9d.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/Shan-Mi/marvel-api-react-task1/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.f01a39b2.chunk.js": "/Shan-Mi/marvel-api-react-task1/static/js/2.f01a39b2.chunk.js",
+    "static/js/2.f01a39b2.chunk.js.map": "/Shan-Mi/marvel-api-react-task1/static/js/2.f01a39b2.chunk.js.map",
+    "index.html": "/Shan-Mi/marvel-api-react-task1/index.html",
+    "precache-manifest.4bca249b08318ecb2da2534438a9d513.js": "/Shan-Mi/marvel-api-react-task1/precache-manifest.4bca249b08318ecb2da2534438a9d513.js",
+    "service-worker.js": "/Shan-Mi/marvel-api-react-task1/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/Shan-Mi/marvel-api-react-task1/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.ae0ab4c9.chunk.css.map": "/Shan-Mi/marvel-api-react-task1/static/css/main.ae0ab4c9.chunk.css.map",
+    "static/js/2.f01a39b2.chunk.js.LICENSE.txt": "/Shan-Mi/marvel-api-react-task1/static/js/2.f01a39b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.adf02a9d.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.f01a39b2.chunk.js",
+    "static/css/main.ae0ab4c9.chunk.css",
+    "static/js/main.94890e6d.chunk.js"
+  ]
+}
