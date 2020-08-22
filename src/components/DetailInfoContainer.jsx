@@ -1,6 +1,6 @@
 import React from "react";
 
-const DetailInfoContainer = ({ item: { name } }) => {
+const DetailInfoContainer = ({ item: { name } = "empty" }) => {
   return (
     <div>
       <p>{name}</p>
