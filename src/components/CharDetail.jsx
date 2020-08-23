@@ -5,7 +5,7 @@ import { HeaderContainer, NameListContainer } from "./CharDetail.styles";
 import DetailInfoContainer from "./DetailInfoContainer";
 import PageSwitcher from "./PageSwitcher";
 
-const CharDetail = ({ data, isLoading, link }) => {
+const CharDetail = ({ data, isLoading }) => {
   const {
     id,
     name,
@@ -18,11 +18,14 @@ const CharDetail = ({ data, isLoading, link }) => {
 
   return (
     <div className="detail-page-container">
-      <PageSwitcher link={link} />
+      <PageSwitcher />
       <HeaderContainer>
         <div>
           <h1>{name}</h1>
-          <h3><span>ID: </span>{id}</h3>
+          <h3>
+            <span>ID: </span>
+            {id}
+          </h3>
         </div>
         <img src={`${path}.${extension}`} alt={`${name}`} />
       </HeaderContainer>

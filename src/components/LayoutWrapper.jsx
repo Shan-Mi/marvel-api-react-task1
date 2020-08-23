@@ -5,10 +5,10 @@ export default function LayoutSimple({ children }) {
   return (
     <>
       <div className="d-flex justify-content-center mt-4">
-        <Link className=" btn btn-outline-primary mr-3 btn-lg" to="/marvel-api-react-task1">
+        <Link className=" btn btn-outline-primary mr-3 btn-lg" to="/">
           Home
         </Link>
-        <Link className=" btn btn-outline-info btn-lg " to="/marvel-api-react-task1/characters">
+        <Link className=" btn btn-outline-info btn-lg " to="/characters">
           Go to Characters List
         </Link>
       </div>

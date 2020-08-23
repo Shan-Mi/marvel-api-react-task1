@@ -8,20 +8,21 @@ import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 import "bootstrap/dist/css/bootstrap.css";
 import CharDetailPage from "./components/CharDetailPage";
+// import PageSwitcher from "./components/PageSwitcher";
 
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
       <Switch>
-        <Route path="/marvel-api-react-task1/" exact>
+        <Route path="/" exact>
           <LayoutWrapper>
             <Homepage />
           </LayoutWrapper>
         </Route>
 
         <Route
-          path="/marvel-api-react-task1/characters/:id" exact
+          path="/characters/:id" exact
           render={(props) => (
             <LayoutWrapper>
               <CharDetailPage {...props} />
@@ -29,7 +30,7 @@ function App() {
           )}
         ></Route>
 
-        <Route path="/marvel-api-react-task1/characters">
+        <Route path="/characters">
           <LayoutWrapper>
             <CharListPage />
           </LayoutWrapper>

@@ -13,7 +13,7 @@ const CharItem = ({ data, index, isLoading }) => {
 
   return (
     <CharItemContainer>
-      <Link to={`/marvel-api-react-task1/characters/${index}`}>
+      <Link to={`/characters/${index}`}>
         <ImageContainer>
           <img src={`${path}.${extension}`} alt={`${name}`} />
         </ImageContainer>
