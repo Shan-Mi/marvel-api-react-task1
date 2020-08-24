@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ImageContainer, CharItemContainer } from "./CharItem.styles";
-import WithSpinner from "./WithSpinner";
 
-const CharItem = ({ data, index, isLoading }) => {
+const CharItem = ({ data, index }) => {
   const {
     // id,
     name,
@@ -27,7 +26,7 @@ const CharItem = ({ data, index, isLoading }) => {
   );
 };
 
-export default WithSpinner(CharItem);
+export default CharItem;
 /* 
 correct path:
 path + extension
