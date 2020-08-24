@@ -1,9 +1,9 @@
 import React from "react";
 
 import WithSpinner from "./WithSpinner";
-import { HeaderContainer, NameListContainer } from "./CharDetail.styles";
-import DetailInfoContainer from "./DetailInfoContainer";
+import { HeaderContainer } from "./CharDetail.styles";
 import PageSwitcher from "./PageSwitcher";
+import DetailInfo from "./DetailInfo";
 
 const CharDetail = ({ data, isLoading }) => {
   const {
@@ -30,57 +30,30 @@ const CharDetail = ({ data, isLoading }) => {
         <img src={`${path}.${extension}`} alt={`${name}`} />
       </HeaderContainer>
       <div className="detail-page-info-body">
-        <div className="detail-page-comics">
-          <h3>{`Available comics amount: ${comicsNumber}`}</h3>
-          <NameListContainer>
-            {comicsNumber === 0 ? (
-              <DetailInfoContainer />
-            ) : (
-              comicsItems.map((item, i) => (
-                <DetailInfoContainer key={i} item={item} />
-              ))
-            )}
-          </NameListContainer>
-        </div>
-
-        <div className="detail-page-events">
-          <h3>{`Available events amount: ${eventsNumber}`}</h3>
-          <NameListContainer>
-            {eventsNumber === 0 ? (
-              <DetailInfoContainer />
-            ) : (
-              eventsItems.map((item, i) => (
-                <DetailInfoContainer key={i} item={item} />
-              ))
-            )}
-          </NameListContainer>
-        </div>
-
-        <div className="detail-page-events">
-          <h3>{`Available series amount: ${seriesNumber}`}</h3>
-          <NameListContainer>
-            {seriesNumber === 0 ? (
-              <DetailInfoContainer />
-            ) : (
-              seriesItems.map((item, i) => (
-                <DetailInfoContainer key={i} item={item} />
-              ))
-            )}
-          </NameListContainer>
-        </div>
-
-        <div className="detail-page-stories">
-          <h3>{`Available stories amount: ${storiesNumber}`}</h3>
-          <NameListContainer>
-            {storiesNumber === 0 ? (
-              <DetailInfoContainer />
-            ) : (
-              storiesItems.map((item, i) => (
-                <DetailInfoContainer key={i} item={item} />
-              ))
-            )}
-          </NameListContainer>
-        </div>
+        <DetailInfo
+          catagory={"comics"}
+          isEmpty={!comicsNumber}
+          amount={comicsNumber}
+          items={comicsItems}
+        />
+        <DetailInfo
+          catagory={"events"}
+          isEmpty={!eventsNumber}
+          amount={eventsNumber}
+          items={eventsItems}
+        />
+        <DetailInfo
+          catagory={"series"}
+          isEmpty={!seriesNumber}
+          amount={seriesNumber}
+          items={seriesItems}
+        />
+        <DetailInfo
+          catagory={"stories"}
+          isEmpty={!storiesNumber}
+          amount={storiesNumber}
+          items={storiesItems}
+        />
       </div>
     </div>
   );
