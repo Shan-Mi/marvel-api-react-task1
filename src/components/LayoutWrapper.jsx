@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MyButton from "./MyButton";
+import { HeaderContainer } from "./DetailLayout.styles";
 
 export default function LayoutSimple({ children }) {
   return (
     <>
-      <div
-        className="d-flex justify-content-center mt-4"
-        style={{ position: "sticky", top: 0, zIndex: 1 }}
-      >
-        <Link className=" btn btn-outline-primary mr-3 btn-lg" to="/">
-          Home
+      <HeaderContainer>
+        <Link to="/">
+          <MyButton>Home</MyButton>
         </Link>
-        <Link className=" btn btn-outline-info btn-lg " to="/characters">
-          Go to Characters List
+        <Link to="/characters">
+          <MyButton>Go to Characters List</MyButton>
         </Link>
-      </div>
+      </HeaderContainer>
       {children}
     </>
   );

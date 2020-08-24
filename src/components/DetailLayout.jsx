@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory, useLocation } from "react-router-dom";
 import MyButton from "./MyButton";
+import { HeaderContainer } from "./DetailLayout.styles";
 
 export default function DetailLayout({ children }) {
   const { pathname } = useLocation();
@@ -22,26 +23,20 @@ export default function DetailLayout({ children }) {
 
   return (
     <>
-      <div
-        className="d-flex justify-content-center mt-4"
-        style={{ position: "sticky", top: 0, zIndex: 1 }}
-      >
-        {/*       <Link
-          className=" btn btn-outline-primary mr-3 btn-lg"
-          style={{ zIndex: 10 }}
-          to="/characters/1"
-        >
-          test
-        </Link> */}
-        <MyButton changePage='true' onClick={handleClickPrev}>Go to previous page</MyButton>
+      <HeaderContainer>
+        <MyButton changePage="true" onClick={handleClickPrev}>
+          Go to previous page
+        </MyButton>
         <Link to="/">
-          <MyButton >Home</MyButton>
+          <MyButton>Home</MyButton>
         </Link>
         <Link to="/characters">
           <MyButton>Go to Characters List</MyButton>
         </Link>
-        <MyButton changePage='true' onClick={handleClickNext}>Go to next page</MyButton>
-      </div>
+        <MyButton changePage="true" onClick={handleClickNext}>
+          Go to next page
+        </MyButton>
+      </HeaderContainer>
       {children}
     </>
   );

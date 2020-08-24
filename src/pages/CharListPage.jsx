@@ -9,7 +9,7 @@ function CharListPage() {
     "https://mock-data-api.firebaseio.com/marvel-characters.json",
     "preview",
     []
-  );
+  );// eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>

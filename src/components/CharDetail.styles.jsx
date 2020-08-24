@@ -38,6 +38,7 @@ export const HeaderContainer = styled.div`
 
     h5 {
       font-style: italic;
+      max-width: 55vw;
 
       &:before,
       &:after {
