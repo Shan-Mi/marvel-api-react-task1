@@ -11,7 +11,8 @@
 - heroku
 
 ### TODO
-1. A better layout;
-2. Get rid of the stupid forceRefresh thing;
-3. Should implement useContext and lazy and other stuff to get the whole thing improved;
-4. Read docs again.
+1. Get rid of the stupid forceRefresh thing;
+2. Should implement useContext and lazy and other stuff to get the whole thing improved;
+3. Using customized hook to fetch data multiple times which is stupid and low effecient, need a store to store data, filter, etc. Will come back from later course, so sure. 
+
+PS. *If it's a real offcial API, there will be huge amount of data, then condition check, data filtering, even server render and other render optimization, wanna die...*
