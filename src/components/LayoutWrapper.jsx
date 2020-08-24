@@ -6,7 +6,7 @@ export default function LayoutSimple({ children }) {
     <>
       <div
         className="d-flex justify-content-center mt-4"
-        style={{ position: "sticky", top: 0, zIndex: 10 }}
+        style={{ position: "sticky", top: 0, zIndex: 1 }}
       >
         <Link className=" btn btn-outline-primary mr-3 btn-lg" to="/">
           Home

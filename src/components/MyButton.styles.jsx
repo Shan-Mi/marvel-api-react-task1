@@ -4,6 +4,7 @@ const buttonStyles = css`
   background-color: black;
   color: white;
   border: none;
+  // z-index: 15;
 
   &:hover {
     background-color: white;
@@ -26,6 +27,7 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-right: 2rem;
 
   ${buttonStyles}
 `;

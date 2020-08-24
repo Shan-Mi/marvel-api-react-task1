@@ -19,7 +19,7 @@ const CharItem = ({ data, index, isLoading }) => {
         </ImageContainer>
       </Link>
 
-      <Link to={`/marvel-api-react-task1/characters/${index}`}>
+      <Link to={`/characters/${index}`}>
         <h1>{name}</h1>
       </Link>
       <p>{`Comics Available Number: ${available}`}</p>
