@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useHistory, useLocation } from "react-router-dom";
 import MyButton from "./MyButton";
 
-export default function LayoutSimple({ children }) {
+export default function DetailLayout({ children }) {
   const { pathname } = useLocation();
   const pageIndex = [.../\d+$/.exec(pathname)];
   const pageURL = pathname.replace(pageIndex, "");

@@ -2,8 +2,8 @@ import React from "react";
 
 import WithSpinner from "./WithSpinner";
 import { HeaderContainer } from "./CharDetail.styles";
-import PageSwitcher from "./PageSwitcher";
 import DetailInfo from "./DetailInfo";
+import DetailHeader from "./DetailHeader";
 
 const CharDetail = ({ data, isLoading }) => {
   const {
@@ -18,17 +18,10 @@ const CharDetail = ({ data, isLoading }) => {
 
   return (
     <div className="detail-page-container">
-
       <HeaderContainer>
-        <div>
-          <h1>{name}</h1>
-          <h3>
-            <span>ID: </span>
-            {id}
-          </h3>
-        </div>
-        <img src={`${path}.${extension}`} alt={`${name}`} />
+        <DetailHeader name={name} id={id} extension={extension} path={path} />
       </HeaderContainer>
+
       <div className="detail-page-info-body">
         <DetailInfo
           catagory={"comics"}
