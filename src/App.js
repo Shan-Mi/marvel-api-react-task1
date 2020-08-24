@@ -3,11 +3,11 @@ import CharListPage from "./pages/CharListPage";
 import { Switch, Route } from "react-router-dom";
 import LayoutWrapper from "./components/LayoutWrapper";
 import Homepage from "./pages/Homepage";
+import CharDetailPage from "./pages/CharDetailPage";
 
 import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 import "bootstrap/dist/css/bootstrap.css";
-import CharDetailPage from "./components/CharDetailPage";
 // import PageSwitcher from "./components/PageSwitcher";
 
 function App() {

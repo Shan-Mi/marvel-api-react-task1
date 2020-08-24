@@ -1,8 +1,8 @@
 import React from "react";
-import useFetch from "./useFetch";
+import useFetch from "../components/useFetch";
 
 import { useParams } from "react-router-dom";
-import CharDetail from "./CharDetail";
+import CharDetail from "../components/CharDetail";
 
 const CharDetailPage = () => {
   // const id = props.match.params.id;
