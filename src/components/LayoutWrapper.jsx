@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 export default function LayoutSimple({ children }) {
   return (
     <>
-      <div className="d-flex justify-content-center mt-4">
+      <div
+        className="d-flex justify-content-center mt-4"
+        style={{ position: "sticky", top: 0, zIndex: 10 }}
+      >
         <Link className=" btn btn-outline-primary mr-3 btn-lg" to="/">
           Home
         </Link>

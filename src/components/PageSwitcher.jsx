@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, withRouter, useLocation, Link } from "react-router-dom";
+import { useHistory, withRouter, useLocation } from "react-router-dom";
 import MyButton from "./MyButton";
 import { ButtonsWrapper } from "./ButtonsWrapper.styles";
 
@@ -22,7 +22,7 @@ const PageSwitcher = () => {
 
   return (
     <ButtonsWrapper>
-      <Link to={`${pageURL}${pagePrev}`}><MyButton onClick={handleClickPrev}>Go to previous page</MyButton></Link>
+      <MyButton onClick={handleClickPrev}>Go to previous page</MyButton>
       <MyButton onClick={handleClickNext}>Go to next page</MyButton>
     </ButtonsWrapper>
   );

@@ -14,8 +14,8 @@ const buttonStyles = css`
 `;
 
 export const CustomButtonContainer = styled.button`
-  min-width: 165px;
-  width: 200px;
+  /* min-width: 165px; */
+  width: 250px;
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;

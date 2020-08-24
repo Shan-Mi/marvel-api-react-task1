@@ -17,7 +17,7 @@ const CharDetail = ({ data, isLoading }) => {
   } = data;
 
   return (
-    <div className="detail-page-container">
+    <div className="detail-page-container" style={{ position: "relative" }}>
       <PageSwitcher />
       <HeaderContainer>
         <div>
