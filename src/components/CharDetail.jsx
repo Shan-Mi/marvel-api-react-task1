@@ -57,7 +57,7 @@ const CharDetail = ({ data, isLoading }) => {
           items={storiesItems}
         />
 
-        <DetailUrlContainer urls={urls} />
+        <DetailUrlContainer urls={urls}/>
       </div>
     </div>
   );

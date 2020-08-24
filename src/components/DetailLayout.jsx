@@ -33,14 +33,14 @@ export default function DetailLayout({ children }) {
         >
           test
         </Link> */}
-        <MyButton onClick={handleClickPrev}>Go to previous page</MyButton>
+        <MyButton changePage='true' onClick={handleClickPrev}>Go to previous page</MyButton>
         <Link to="/">
           <MyButton >Home</MyButton>
         </Link>
         <Link to="/characters">
           <MyButton>Go to Characters List</MyButton>
         </Link>
-        <MyButton onClick={handleClickNext}>Go to next page</MyButton>
+        <MyButton changePage='true' onClick={handleClickNext}>Go to next page</MyButton>
       </div>
       {children}
     </>

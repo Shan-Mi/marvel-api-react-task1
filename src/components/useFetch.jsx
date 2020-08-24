@@ -24,7 +24,7 @@ export default function useFetch(url, id, dependencies) {
 
   useEffect(() => {
     fetchData();
-  }, dependencies); // eslint-disable-line react-hooks/exhaustive-deps
+  }, dependencies);
 
   return [data, isLoading, attrText];
 }
