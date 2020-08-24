@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 export default function useFetch(url, id, dependencies) {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [attrText, setAttrText] = useState("");
 
   function fetchData() {
     fetch(url)
@@ -16,7 +17,7 @@ export default function useFetch(url, id, dependencies) {
         id === "preview"
           ? setData(result.data.results)
           : setData(result.data.results[id]);
-
+        setAttrText(result.attributionText);
         setIsLoading(false);
       });
   }
@@ -25,5 +26,5 @@ export default function useFetch(url, id, dependencies) {
     fetchData();
   }, dependencies); // eslint-disable-line react-hooks/exhaustive-deps
 
-  return [data, isLoading];
+  return [data, isLoading, attrText];
 }

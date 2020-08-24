@@ -25,13 +25,23 @@ export const HeaderContainer = styled.div`
       margin-right: auto;
     }
 
-    h3 {
+    h3,
+    h5 {
       text-indent: 2rem;
       margin-right: auto;
 
       /* text-align: center; */
       span {
         font-weight: bold;
+      }
+    }
+
+    h5 {
+      font-style: italic;
+
+      &:before,
+      &:after {
+        ${(props) => (props.description ? `content: '"';` : "")}
       }
     }
   }

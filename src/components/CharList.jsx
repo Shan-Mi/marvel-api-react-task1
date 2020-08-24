@@ -3,7 +3,7 @@ import CharItem from "./CharItem";
 import { CharListContainer } from "./CharListContainer";
 import WithSpinner from "./WithSpinner";
 
-const CharList = ({ data, isLoading }) => {
+const CharList = ({ data, isLoading, attrText }) => {
   return (
     <CharListContainer>
       {data.map((item, index) => (

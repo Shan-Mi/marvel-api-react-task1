@@ -1,6 +1,6 @@
 import React from "react";
 
-const DetailHeader = ({ name, id, path, extension }) => {
+const DetailHeader = ({ name, id, path, extension, description }) => {
   return (
     <>
       <div>
@@ -9,6 +9,7 @@ const DetailHeader = ({ name, id, path, extension }) => {
           <span>ID: </span>
           {id}
         </h3>
+        <h5>{description}</h5>
       </div>
       <img src={`${path}.${extension}`} alt={`${name}`} />
     </>

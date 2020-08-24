@@ -4,7 +4,6 @@ const buttonStyles = css`
   background-color: black;
   color: white;
   border: none;
-  // z-index: 15;
 
   &:hover {
     background-color: white;
