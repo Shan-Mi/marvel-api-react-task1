@@ -6,7 +6,7 @@ const DetailUrlContainer = ({ urls }) => {
     <UrlContainer>
       {urls.map((item, i) => (
         <div key={i}>
-          <a href={i} target="_blank" rel="noopener noreferrer">
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
             {item.type}
           </a>
         </div>
