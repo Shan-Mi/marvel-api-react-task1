@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext } from "react";
 import CharListPage from "./pages/CharListPage";
 import { Switch, Route } from "react-router-dom";
 
@@ -10,6 +10,23 @@ import CharDetailPage from "./pages/CharDetailPage";
 import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 import "bootstrap/dist/css/bootstrap.css";
+import useFetch from "./components/useFetch";
+
+export const CharactersContext = createContext();
+
+export const CharactersProvider = (props) => {
+  const [data, isLoading, attrText] = useFetch(
+    "https://mock-data-api.firebaseio.com/marvel-characters.json",
+    "preview",
+    []
+  ); // eslint-disable-line react-hooks/exhaustive-deps
+
+  return (
+    <CharactersContext.Provider value={{ data, isLoading, attrText }}>
+      {props.children}
+    </CharactersContext.Provider>
+  );
+};
 
 function App() {
   return (
