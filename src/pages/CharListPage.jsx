@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import CharList from "../components/CharList";
-// import useFetch from "../components/useFetch";
-import WithSpinner from "../components/WithSpinner";
-import Footer from "../components/Footer";
+import CharList from "../components/PreviewPageComponents/CharList";
+import WithSpinner from "../components/WithSpinner/WithSpinner";
+import Footer from "../components/Footer/Footer";
 import { CharactersContext } from "../context/GlobalContext";
 
 function CharListPage() {

@@ -1,7 +1,7 @@
 import React from "react";
 import CharItem from "./CharItem";
 import { CharListContainer } from "./CharListContainer";
-import WithSpinner from "./WithSpinner";
+import WithSpinner from "../WithSpinner/WithSpinner";
 
 const CharList = ({ data, isLoading }) => {
   return (

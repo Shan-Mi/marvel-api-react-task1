@@ -6,7 +6,6 @@ export const CharactersContext = createContext();
 const GlobalContext = (props) => {
   const [data, isLoading, attrText] = useFetch(
     "https://mock-data-api.firebaseio.com/marvel-characters.json",
-    "preview",
     []
   ); // eslint-disable-line react-hooks/exhaustive-deps
 

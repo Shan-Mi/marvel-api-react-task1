@@ -1,5 +1,5 @@
 import React from "react";
-import EmptyDetail from "./EmptyDetail";
+import EmptyDetail from "../EmptyDetail";
 
 const DetailInfoContainerCheckEmpty = (WrappedComponent) => ({
   isEmpty,

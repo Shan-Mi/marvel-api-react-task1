@@ -1,6 +1,6 @@
 import React from "react";
 
-import WithSpinner from "./WithSpinner";
+import WithSpinner from "../WithSpinner/WithSpinner";
 import { HeaderContainer } from "./CharDetail.styles";
 import DetailInfo from "./DetailInfo";
 import DetailHeader from "./DetailHeader";

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useFetch(url, id, dependencies) {
+export default function useFetch(url, dependencies) {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [attrText, setAttrText] = useState("");
@@ -14,9 +14,7 @@ export default function useFetch(url, id, dependencies) {
         return res.json();
       })
       .then((result) => {
-        id === "preview"
-          ? setData(result.data.results)
-          : setData(result.data.results[id]);
+        setData(result.data.results);
         setAttrText(result.attributionText);
         setIsLoading(false);
       });
@@ -24,7 +22,7 @@ export default function useFetch(url, id, dependencies) {
 
   useEffect(() => {
     fetchData();
-  }, dependencies);// eslint-disable-line react-hooks/exhaustive-deps
+  }, dependencies); // eslint-disable-line react-hooks/exhaustive-deps
 
   return [data, isLoading, attrText];
 }

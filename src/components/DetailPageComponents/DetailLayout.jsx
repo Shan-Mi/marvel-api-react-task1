@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory, useLocation } from "react-router-dom";
-import MyButton from "./MyButton";
+import MyButton from "../MyButton/MyButton";
 import { HeaderContainer } from "./DetailLayout.styles";
 
 export default function DetailLayout({ children }) {

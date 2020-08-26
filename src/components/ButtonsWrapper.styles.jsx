@@ -7,4 +7,4 @@ export const ButtonsWrapper = styled.div`
   position: sticky;
   top: 0;
   background-color: #d1ccc0;
-`
+`;
