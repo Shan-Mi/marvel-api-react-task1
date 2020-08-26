@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 6rem;
+  height: 12rem;
 
   &::before {
     content: "";

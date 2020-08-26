@@ -4,8 +4,8 @@ import { FooterContainer } from "./Footer.styles";
 const Footer = ({ attrText }) => {
   return (
     <FooterContainer>
-      <h5>{attrText}</h5>
-      <h6>By Shan Mi from Nackademin | {new Date().toDateString()}</h6>
+      <h4>{attrText}</h4>
+      <h5>By Shan Mi from Nackademin | {new Date().toDateString()}</h5>
     </FooterContainer>
   );
 };
