@@ -7,8 +7,6 @@ import DetailLayout from "./components/DetailPageComponents/DetailLayout";
 import Homepage from "./pages/Homepage";
 import CharDetailPage from "./pages/CharDetailPage";
 
-// import { CharactersContext } from "./context/GlobalContext";
-
 import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 

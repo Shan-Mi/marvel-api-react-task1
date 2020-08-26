@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import WithSpinner from "../WithSpinner/WithSpinner";
 import { HeaderContainer } from "./CharDetail.styles";
@@ -18,6 +18,10 @@ const CharDetail = ({ data, isLoading, pageIndex }) => {
     stories: { available: storiesNumber, items: storiesItems },
     urls,
   } = data[pageIndex];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="detail-page-container">
