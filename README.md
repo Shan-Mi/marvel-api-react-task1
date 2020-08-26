@@ -13,8 +13,5 @@
 - heroku
 
 ### TODO
-1. Get rid of the stupid forceRefresh thing;
-2. Should implement useContext and lazy and other stuff to get the whole thing improved;
-3. Using customized hook to fetch data multiple times which is stupid and low effecient, need a store to store data, filter, etc. Will come back from later course, so sure. 
-
-PS. *If it's a real offcial API, there will be huge amount of data, then condition check, data filtering, even server render and other render optimization, wanna die...*
+Looks little weird when click go-to-previous-page or go-to-next-page, might be image loading issue.
+Will check it out later.
