@@ -6,7 +6,7 @@ import DetailInfo from "./DetailInfo";
 import DetailHeader from "./DetailHeader";
 import DetailUrlContainer from "./DetailUrlContainer";
 
-const CharDetail = ({ data, isLoading }) => {
+const CharDetail = ({ data, isLoading, pageIndex }) => {
   const {
     id,
     name,
@@ -17,7 +17,7 @@ const CharDetail = ({ data, isLoading }) => {
     series: { available: seriesNumber, items: seriesItems },
     stories: { available: storiesNumber, items: storiesItems },
     urls,
-  } = data;
+  } = data[pageIndex];
 
   return (
     <div className="detail-page-container">
@@ -57,7 +57,7 @@ const CharDetail = ({ data, isLoading }) => {
           items={storiesItems}
         />
 
-        <DetailUrlContainer urls={urls}/>
+        <DetailUrlContainer urls={urls} />
       </div>
     </div>
   );

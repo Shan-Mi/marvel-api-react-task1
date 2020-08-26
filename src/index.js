@@ -9,7 +9,7 @@ import GlobalContext from "./context/GlobalContext";
 ReactDOM.render(
   <React.StrictMode>
     <GlobalContext>
-      <BrowserRouter forceRefresh={true}>
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </GlobalContext>

@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useContext } from "react";
 import CharListPage from "./pages/CharListPage";
 import { Switch, Route } from "react-router-dom";
 
@@ -7,33 +7,21 @@ import DetailLayout from "./components/DetailLayout";
 import Homepage from "./pages/Homepage";
 import CharDetailPage from "./pages/CharDetailPage";
 
+import { CharactersContext } from "./context/GlobalContext";
+
 import "./App.css";
 import { GlobalStyle } from "./components/GlobalStyle.styles.jsx";
 import "bootstrap/dist/css/bootstrap.css";
-import useFetch from "./components/useFetch";
-
-export const CharactersContext = createContext();
-
-export const CharactersProvider = (props) => {
-  const [data, isLoading, attrText] = useFetch(
-    "https://mock-data-api.firebaseio.com/marvel-characters.json",
-    "preview",
-    []
-  ); // eslint-disable-line react-hooks/exhaustive-deps
-
-  return (
-    <CharactersContext.Provider value={{ data, isLoading, attrText }}>
-      {props.children}
-    </CharactersContext.Provider>
-  );
-};
 
 function App() {
+  const CharsListData = useContext(CharactersContext);
+  const { isLoading } = CharsListData;
+
   return (
     <div className="App">
       <GlobalStyle />
       <Switch>
-        <Route path="/" exact>
+        <Route path="/" exact >
           <LayoutWrapper>
             <Homepage />
           </LayoutWrapper>
@@ -44,7 +32,7 @@ function App() {
           exact
           render={(props) => (
             <DetailLayout>
-              <CharDetailPage {...props} />
+              <CharDetailPage isLoading={isLoading} {...props} />
             </DetailLayout>
           )}
         ></Route>
