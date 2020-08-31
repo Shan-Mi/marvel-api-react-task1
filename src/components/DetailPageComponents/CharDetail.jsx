@@ -6,7 +6,7 @@ import DetailInfo from "./DetailInfo";
 import DetailHeader from "./DetailHeader";
 import DetailUrlContainer from "./DetailUrlContainer";
 
-const CharDetail = ({ data, isLoading, pageIndex }) => {
+const CharDetail = ({ data, pageIndex }) => {
   const {
     id,
     name,

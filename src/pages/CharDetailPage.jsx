@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 import { CharactersContext } from "../context/GlobalContext";
 
-import WithSpinner from "../components/WithSpinner/WithSpinner";
 import CharDetail from "../components/DetailPageComponents/CharDetail";
 import Footer from "../components/Footer/Footer";
 
@@ -20,4 +19,4 @@ const CharDetailPage = () => {
   );
 };
 
-export default WithSpinner(CharDetailPage);
+export default CharDetailPage;
